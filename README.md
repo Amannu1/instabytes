@@ -1,96 +1,72 @@
-# **Instabytes – Back-end API**
+# Instabytes
 
-Back-end de uma aplicação de rede social de compartilhamento de fotos, desenvolvido com Node.js e MongoDB.
-O projeto expõe uma API REST responsável pelo gerenciamento de posts, upload de imagens, sistema de likes e integração com IA generativa para criação automática de descrições.
+![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-## 🎯 Objetivo do projeto
+This project is a back-end application for a photo-sharing social network, built using **Node.js** and **MongoDB**.
 
-Construir uma API escalável e organizada para simular o funcionamento básico de uma rede social, aplicando conceitos essenciais de back-end como:
+The application exposes a REST API responsible for managing posts, handling image uploads, implementing a like system, and integrating with generative AI to automatically create photo descriptions.
 
-Arquitetura REST
+The API simulates the core functionality of a modern social media platform, where users can create and interact with posts, upload images, and receive AI-generated captions to enhance their content.
 
-Persistência de dados
+## Table of Contents
 
-Upload de arquivos
+- [Technologies](#technologies)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [License](#license)
 
-Integração com APIs externas
+## Technologies
 
-Separação de responsabilidades
+- NodeJS
+- Google Gemini API
+- MongoDB
+- Mongoose
+- Express
 
-## ⚙️ Funcionalidades
+## Prerequisites
 
-Criação e listagem de posts
+- [NodeJS](https://nodejs.org/en)
+- [MongoDB](https://www.mongodb.com/)
 
-Upload e armazenamento de imagens
+## Installation
 
-Sistema de likes
+1. Clone the repository:
 
-Geração automática de descrições utilizando Google Gemini API
-
-Comunicação via API REST para consumo por aplicações front-end
-
-## 🛠️ Tecnologias e ferramentas
-
-Node.js
-
-Express
-
-MongoDB
-
-Mongoose
-
-Google Gemini API
-
-## 📋 Pré-requisitos
-
-Para executar o projeto localmente, é necessário ter instalado:
-
-Node.js
-
-MongoDB (local ou em nuvem, como MongoDB Atlas)
-
-## ▶️ Execução do projeto
-1. Clone o repositório
+```bash
 git clone https://github.com/Amannu1/instabytes
+```
 
-2. Acesse o diretório do projeto
+2. Access project directory:
+```bash
 cd instabytes
+```
 
-3. Instale as dependências
+3. Install node dependencies:
+```bash
 npm install
+```
 
-4. Configure as variáveis de ambiente
+4. Configure environment settings:
 
-Crie um arquivo .env na raiz do projeto com o seguinte conteúdo:
+    Create a .env with the content below:
+    
+    STRING_CONEXAO="mongodb+srv://usuario:senha@cluster.mongodb.net/database-name"
+    GEMINI_API_KEY="your_gemini_api_key"
+    
+    STRING_CONEXAO: MongoDB connection string
+    GEMINI_API_KEY: Google Gemini API
 
-STRING_CONEXAO="mongodb+srv://usuario:senha@cluster.mongodb.net/nome-do-banco"
-GEMINI_API_KEY="sua_chave_da_api_gemini"
-
-
-STRING_CONEXAO: string de conexão com o MongoDB
-
-GEMINI_API_KEY: chave de acesso à API do Google Gemini
-
-5. Inicie o servidor
+5. Start the application:
+```bash
 npm run dev
+```
+
+## License
+
+MIT
 
 
-A aplicação será executada em modo de desenvolvimento.
 
-## 🧠 Principais aprendizados
-
-Desenvolvimento de APIs REST com Express
-
-Modelagem de dados e persistência com MongoDB
-
-Upload e manipulação de arquivos
-
-Organização de código em camadas
-
-Integração com inteligência artificial generativa
-
-Uso de variáveis de ambiente para configuração segura
-
-## 📌 Observações
-
-Este projeto possui finalidade educacional, mas foi desenvolvido seguindo práticas que podem ser aplicadas em projetos reais, servindo como base para evolução e novas funcionalidades.
